@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-				  sh "rmdir -rf POC-Jenkins"
+				  sh "rm -rf /POC-Jenkins"
                   sh "git clone https://github.com/CarolinaDoncel/POC-Jenkins.git"
                   sh '''#!/bin/bash
                   google-chrome --version
